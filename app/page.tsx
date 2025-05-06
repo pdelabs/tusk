@@ -1,103 +1,160 @@
+"use client";
+
 import Image from "next/image";
+import React from "react";
+import "./styles.css";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      {/* HEADER */}
+      <header>
+        <a href="#inicio" className="logo">
+          <Image
+            src="/logo.png"
+            alt="Tusk Trade Logo"
+            width={100}
+            height={50}
+          />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="#empresa">Empresa</a>
+            </li>
+            <li>
+              <a href="#ofrecemos">Qué ofrecemos</a>
+            </li>
+            <li>
+              <a href="#mercados">Mercados</a>
+            </li>
+            <li>
+              <a href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* HERO */}
+      <section id="inicio" className="hero">
+        <div className="hero-texto">
+          <h1>Tusk Trade Company</h1>
+          <p>
+            Comercio internacional de alimentos desde Uruguay hacia el mundo.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className="hero-imagen">
+          {/* Uncomment if image is available */}
+          {/* <Image src="/hero.jpg" alt="Exportación de alimentos" width={800} height={400} /> */}
+        </div>
+      </section>
+
+      {/* EMPRESA */}
+      <section id="empresa" className="seccion">
+        <h2>La Empresa</h2>
+        <p>
+          Somos una empresa ubicada en Uruguay dedicada al comercio
+          internacional de alimentos. Desde 2014 conectamos productores locales
+          con clientes de América Latina, África y Asia. Nuestra experiencia y
+          compromiso nos permiten brindar un servicio confiable y de calidad.
+        </p>
+      </section>
+
+      {/* QUÉ OFRECEMOS */}
+      <section id="ofrecemos" className="seccion">
+        <h2>¿Qué ofrecemos?</h2>
+        <div className="cards">
+          <div className="card">
+            <div className="card-inner">
+              <div className="card-front">
+                <h3>Carnes</h3>
+                <p>
+                  Exportamos cortes vacunos, ovinos y porcinos de alta calidad.
+                </p>
+              </div>
+              <div className="card-back">
+                La carne de Latinoamérica es reconocida mundialmente por su
+                excelente calidad. Ofrecemos todos los cortes bovinos, tanto
+                enfriados como congelados, con y sin hueso.
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <h3>Lácteos</h3>
+            <p>Quesos, leche en polvo y manteca de primeras marcas.</p>
+          </div>
+          <div className="card">
+            <h3>Granos</h3>
+            <p>Soja, arroz, maíz y otros granos uruguayos de exportación.</p>
+          </div>
+          <div className="card">
+            <h3>Frutas y verduras</h3>
+            <p>Productos frescos y seleccionados de productores locales.</p>
+          </div>
+          <div className="card">
+            <h3>Alimentos procesados</h3>
+            <p>Conservas, snacks y productos envasados listos para exportar.</p>
+          </div>
+          <div className="card">
+            <h3>Otros productos</h3>
+            <p>Productos según requerimiento específico del cliente.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* MERCADOS */}
+      <section id="mercados" className="seccion mercados">
+        <div className="mercados-texto">
+          <h2>Mercados</h2>
+          <p>
+            Nuestros principales destinos son países de América Latina, África
+            del Norte, Medio Oriente y Asia. Adaptamos nuestras exportaciones a
+            normativas y necesidades de cada región.
+          </p>
+        </div>
+        <div className="mercados-img">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/mapa.jpg"
+            alt="Mapa de exportaciones"
+            width={600}
+            height={300}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        </div>
+      </section>
+
+      {/* CONTACTO */}
+      <section id="contacto" className="seccion contacto">
+        <h2>Contacto</h2>
+        <p>
+          <strong>Email:</strong> tusktrade@gmail.com
+        </p>
+        <p>
+          <strong>Teléfono:</strong> +598 94 276 007
+        </p>
+        <p>
+          <strong>Ubicación:</strong> Montevideo, Uruguay
+        </p>
+        <form onSubmit={(e) => e.preventDefault()}>
+          <div className="form-group">
+            <label htmlFor="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows={5} required />
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      {/* FOOTER */}
+      <footer>
+        <p>&copy; 2025 Tusk Trade Company. Todos los derechos reservados.</p>
       </footer>
-    </div>
+    </>
   );
 }
