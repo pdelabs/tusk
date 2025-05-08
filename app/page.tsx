@@ -53,10 +53,11 @@ export default function HomePage() {
       <section id="empresa" className="seccion">
         <h2>La Empresa</h2>
         <p>
-          Somos una empresa ubicada en Uruguay dedicada al comercio
-          internacional de alimentos. Desde 2014 conectamos productores locales
-          con clientes de América Latina, África y Asia. Nuestra experiencia y
-          compromiso nos permiten brindar un servicio confiable y de calidad.
+        TUSK Trade Company es una empresa con base en Uruguay cuya actividad principal es el comercio internacional de alimentos de Latinoamérica hacia el mundo. Los fundadores de la empresa tienen vasta experiencia en la comercialización global de alimentos, trabajando con importantes clientes en diversos mercados del mundo.
+Los principales productos con los que trabajamos son carne vacuna, ovina, carne de caballo, pollos, manteca, leche en polvo, suero en polvo, leche UHT, poroto de soja, maíz, pre-mezclas para alimento animal, trigo, arroz, entre otros. Nuestros proveedores son los productores y exportadores más importantes de estos productos en sus respectivos países, garantizando así una gran calidad. Compramos productos mayoritariamente en Uruguay, Paraguay, Brasil, Argentina y Chile.
+Nuestros clientes se concentran básicamente en la Federación Rusa, Reino Unido, Alemania, Noruega, Holanda, Suecia, China, Hong Kong, Vietnam, Egipto, Turquía, Ghana, Sudáfrica, Canadá, Estados Unidos, entre otros. Constantemente buscamos nuevos mercados donde poder comercializar nuestros productos.
+Estamos convencidos de que nuestra región tiene el potencial de convertirse en uno de los principales proveedores de alimentos del mundo y queremos participar activamente en ese proceso. Es por esto que permanentemente buscamos desarrollar relaciones comerciales de largo plazo con nuevas empresas profesionales y confiables que tengan interés en alimentos de Sudamérica.
+Tenemos la certeza que mediante nuestro servicio profesional, eficiente y rápido podemos agregar valor a las operaciones comerciales en las que participamos. Asimismo, nuestra excelente y fluida relación comercial con los principales proveedores de la región nos permite ofrecer los precios más competitivos y cumplir con las exigencias de fechas de embarque y demás aspectos sustanciales de cada operación.
         </p>
       </section>
 
