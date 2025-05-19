@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { useTranslations } from "../context/translations/TranslationsProvider";
 import { Lang } from "../context/translations/types";
+import { FC } from "react";
 
 export default function Home() {
   const { translations: t } = useTranslations();
