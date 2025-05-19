@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { useTranslations } from "../context/translations/TranslationsProvider";
 import { Lang } from "../context/translations/types";
+import { FC } from "react";
 
 export default function Home() {
   const { translations: t } = useTranslations();
@@ -624,7 +625,7 @@ export default function Home() {
 
 const LanguageSwitcher = () => {
   const { setLang, lang } = useTranslations();
-  const langs: Lang[] = ["en", "es"];
+  const langs: Lang[] = ["en", "es", "cn"];
 
   return (
     <div className="flex items-center border rounded-md overflow-hidden">
