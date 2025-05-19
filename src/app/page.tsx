@@ -16,9 +16,9 @@ import {
   Apple,
   Phone,
   Mail,
+  Ham,
 } from "lucide-react";
 import { useTranslations } from "../context/translations/TranslationsProvider";
-import { FC } from "react";
 import { Lang } from "../context/translations/types";
 
 export default function Home() {
@@ -177,7 +177,7 @@ export default function Home() {
               <ProductCard
                 imageSrc="/placeholder.svg?height=400&width=600"
                 imageAlt="Lamb and mutton products"
-                icon={<Beef className="h-6 w-6 text-primary" />}
+                icon={<Ham className="h-6 w-6 text-primary" />}
                 title={t.lamb}
                 description={t.lambDesc}
                 learnMoreText={t.learnMore}
