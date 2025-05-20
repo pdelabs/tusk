@@ -216,14 +216,6 @@ export default function Home() {
                 learnMoreText={t.learnMore}
               />
             </div>
-
-            <div className="mt-12 text-center">
-              <button
-              // size="lg"
-              >
-                {t.viewAll}
-              </button>
-            </div>
           </div>
         </section>
 
