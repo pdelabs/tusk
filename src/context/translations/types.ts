@@ -4,7 +4,7 @@ export type TranslationContextType = {
   translations: Translations;
 };
 
-export type Lang = "en" | "es" | "ru";
+export type Lang = "en" | "es" | "cn" | "ru";
 
 export interface Translations {
   about: string;

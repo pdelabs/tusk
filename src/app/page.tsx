@@ -625,7 +625,7 @@ export default function Home() {
 
 const LanguageSwitcher = () => {
   const { setLang, lang } = useTranslations();
-  const langs: Lang[] = ["en", "es", "ru"];
+  const langs: Lang[] = ["en", "es", "cn", "ru"];
 
   return (
     <div className="flex items-center border rounded-md overflow-hidden">
