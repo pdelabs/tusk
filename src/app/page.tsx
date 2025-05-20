@@ -21,6 +21,7 @@ import {
 import { useTranslations } from "../context/translations/TranslationsProvider";
 import { Lang } from "../context/translations/types";
 import { FC } from "react";
+import Button from "../components/Button";
 
 export default function Home() {
   const { translations: t } = useTranslations();
@@ -66,7 +67,7 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
-            <button>{t.getInTouch}</button>
+            <Button variant="primary" href="#contact">{t.getInTouch}</Button>
           </div>
         </div>
       </header>
@@ -91,19 +92,11 @@ export default function Home() {
                 {t.heroSubtitle}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button
-                  // size="lg"
-                  className="w-full sm:w-auto"
-                >
+               <Button variant="primary" href="#products">
                   {t.exploreProducts}
-                </button>
-                <button
-                  // size="lg"
-                  // variant="outline"
-                  className="w-full sm:w-auto border-white text-white hover:bg-white/10"
-                >
-                  {t.contactUs}
-                </button>
+                </Button>
+                  <Button variant="primary" href="#contact">{t.contactUs}</Button>
+
               </div>
             </div>
           </div>
@@ -215,15 +208,7 @@ export default function Home() {
                 description={t.animalFeedDesc}
                 learnMoreText={t.learnMore}
               />
-            </div>
-
-            <div className="mt-12 text-center">
-              <button
-              // size="lg"
-              >
-                {t.viewAll}
-              </button>
-            </div>
+            </div> 
           </div>
         </section>
 
