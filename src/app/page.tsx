@@ -205,7 +205,11 @@ export default function Home() {
                 description={t.animalFeedDesc}
                 learnMoreText={t.learnMore}
               />
+<<<<<<< HEAD
             </div> 
+=======
+            </div>
+>>>>>>> main
           </div>
         </section>
 
