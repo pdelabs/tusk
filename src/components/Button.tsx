@@ -4,14 +4,12 @@ import Link from 'next/link';
 import React from 'react';
 
 interface ButtonProps {
-  href: string;
   children: React.ReactNode;
   variant?: 'primary' | 'secondary';
   className?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
-  href,
   children,
   variant = 'primary',
   className = '',
@@ -25,10 +23,11 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   return (
-    <Link href={href} className={`${baseStyle} ${variantStyles[variant]} ${className}`}>
+    <button className={`${baseStyle} ${variantStyles[variant]} ${className}`}>
       {children}
-    </Link>
+    </button>
   );
 };
 
 export default Button;
+

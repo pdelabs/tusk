@@ -67,7 +67,7 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
-            <Button variant="primary" href="#contact">{t.getInTouch}</Button>
+            <Button variant="primary">{t.getInTouch}</Button>
           </div>
         </div>
       </header>
@@ -92,11 +92,8 @@ export default function Home() {
                 {t.heroSubtitle}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-               <Button variant="primary" href="#products">
-                  {t.exploreProducts}
-                </Button>
-                  <Button variant="primary" href="#contact">{t.contactUs}</Button>
-
+               <Button variant="primary">{t.exploreProducts}</Button>
+               <Button variant="primary">{t.contactUs}</Button>
               </div>
             </div>
           </div>
