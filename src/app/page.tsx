@@ -199,6 +199,14 @@ export default function Home() {
               />
               <ProductCard
                 imageSrc="/placeholder.svg?height=400&width=600"
+                imageAlt="Rice products"
+                icon={<Wheat className="h-6 w-6 text-primary" />}
+                title={t.rice}
+                description={t.riceDesc}
+                learnMoreText={t.learnMore}
+              />
+              <ProductCard
+                imageSrc="/placeholder.svg?height=400&width=600"
                 imageAlt="Grain products"
                 icon={<Wheat className="h-6 w-6 text-primary" />}
                 title={t.grains}

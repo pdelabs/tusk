@@ -36,9 +36,10 @@ const es = {
   poultry: "Aves de Corral",
   poultryDesc:
     "Pollos enteros y en cortes de Brasil, Argentina y Uruguay, con varias opciones que incluyen certificación Halal.",
-  grains: "Granos y Arroz",
-  grainsDesc:
-    "Variedades premium de soja, trigo, maíz y arroz de las fértiles regiones agrícolas de Sudamérica.",
+  grains: "Granos",
+  grainsDesc: "Variedades premium de soja, trigo y maíz provenientes de las fértiles regiones agrícolas de Sudamérica.",
+  rice: "Arroz",
+  riceDesc: "Ofrecemos diferentes variedades de arroz blanco en granos largos, medianos y cortos, con distintos porcentajes de granos partidos. También vendemos arroz pulido y parbolizado.",
   animalFeed: "Alimentos para Animales",
   animalFeedDesc:
     "Alimentos para animales de alta calidad a base de maíz y soja, que cumplen con requisitos específicos de contenido para mercados globales.",

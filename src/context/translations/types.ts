@@ -35,6 +35,8 @@ export interface Translations {
   dairyDesc: string;
   poultry: string;
   poultryDesc: string;
+  rice: string;
+  riceDesc: string;
   grains: string;
   grainsDesc: string;
   animalFeed: string;
