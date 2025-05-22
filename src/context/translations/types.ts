@@ -29,10 +29,14 @@ export interface Translations {
   beefDesc: string;
   lamb: string;
   lambDesc: string;
+  horse: string;
+  horseDesc: string;
   dairy: string;
   dairyDesc: string;
   poultry: string;
   poultryDesc: string;
+  rice: string;
+  riceDesc: string;
   grains: string;
   grainsDesc: string;
   animalFeed: string;

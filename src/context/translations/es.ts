@@ -28,15 +28,18 @@ const es = {
   lamb: "Cordero/Carnero",
   lambDesc:
     "Carne ovina de alta calidad de Uruguay y Argentina, incluyendo canales y cortes de cordero y carnero con certificación Halal disponible.",
+  horse: "Caballo",
+  horseDesc: "Ofrecemos diferentes cortes de carne de caballo, refrigerados y congelados, tales como: delanteros incompletos (RFQ) y completos, nalga de adentro, nalga de afuera, bola de lomo y cortes premium. También vendemos menudencias y recortes de caballo.",
   dairy: "Productos Lácteos",
   dairyDesc:
     "Productos lácteos premium de Uruguay y Argentina que incluyen mantequilla, leche en polvo, leche UHT, suero en polvo y varios quesos.",
   poultry: "Aves de Corral",
   poultryDesc:
     "Pollos enteros y en cortes de Brasil, Argentina y Uruguay, con varias opciones que incluyen certificación Halal.",
-  grains: "Granos y Arroz",
-  grainsDesc:
-    "Variedades premium de soja, trigo, maíz y arroz de las fértiles regiones agrícolas de Sudamérica.",
+  grains: "Granos",
+  grainsDesc: "Variedades premium de soja, trigo y maíz provenientes de las fértiles regiones agrícolas de Sudamérica.",
+  rice: "Arroz",
+  riceDesc: "Ofrecemos diferentes variedades de arroz blanco en granos largos, medianos y cortos, con distintos porcentajes de granos partidos. También vendemos arroz pulido y parbolizado.",
   animalFeed: "Alimentos para Animales",
   animalFeedDesc:
     "Alimentos para animales de alta calidad a base de maíz y soja, que cumplen con requisitos específicos de contenido para mercados globales.",

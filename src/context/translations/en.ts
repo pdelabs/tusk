@@ -25,6 +25,8 @@ const en = {
   beefDesc:
     "South American beef renowned for superior quality. All cuts available, chilled and frozen, including Black Angus and Organic certified beef.",
   lamb: "Lamb/Mutton",
+  horse: "Horse",
+  horseDesc: "We offer different horse meat cuts, chilled and frozen, such as: incomplete (RFQ) and full forequarters, topside, silverside, knuckle and premium cuts. We also sell horse offals and trimmings.",
   lambDesc:
     "High-quality ovine meat from Uruguay and Argentina, including lamb and mutton carcasses and cuts with Halal certification available.",
   dairy: "Dairy Products",
@@ -33,9 +35,11 @@ const en = {
   poultry: "Poultry",
   poultryDesc:
     "Whole and by-cut chickens from Brazil, Argentina, and Uruguay, with various options including Halal certification.",
-  grains: "Grains & Rice",
+  grains: "Grains",
   grainsDesc:
-    "Premium soybean, wheat, corn, and rice varieties from South America's fertile agricultural regions.",
+    "Premium soybean, wheat and corn varieties from South America's fertile agricultural regions.",
+  rice: "Rice",
+  riceDesc: "We offer different varieties of white rice in long, medium and short grains, with different percentages of broken grains. We also sell polished and parboiled rice.",
   animalFeed: "Animal Feed Meals",
   animalFeedDesc:
     "High-quality animal feed meals based on corn and soybean, meeting specific content requirements for global markets.",
