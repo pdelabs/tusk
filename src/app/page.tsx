@@ -92,8 +92,8 @@ export default function Home() {
                 {t.heroSubtitle}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-               <Button variant="primary">{t.exploreProducts}</Button>
-               <Button variant="primary">{t.contactUs}</Button>
+                <Button variant="primary">{t.exploreProducts}</Button>
+                <Button variant="primary">{t.contactUs}</Button>
               </div>
             </div>
           </div>
@@ -205,11 +205,7 @@ export default function Home() {
                 description={t.animalFeedDesc}
                 learnMoreText={t.learnMore}
               />
-<<<<<<< HEAD
-            </div> 
-=======
             </div>
->>>>>>> main
           </div>
         </section>
 
