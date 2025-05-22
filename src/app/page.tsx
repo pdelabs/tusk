@@ -8,6 +8,7 @@ import Global from "./Global";
 import Contact from "./Contact";
 import WhyChooseUs from "./WhyChooseUs";
 import Header from "./Header";
+import Button from "../components/Button";
 
 export default function Home() {
   return (
@@ -47,10 +48,8 @@ const HeroSection = () => {
             {t.heroSubtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button className="w-full sm:w-auto">{t.exploreProducts}</button>
-            <button className="w-full sm:w-auto border-white text-white hover:bg-white/10">
-              {t.contactUs}
-            </button>
+            <Button variant="primary">{t.exploreProducts}</Button>
+            <Button variant="secondary">{t.contactUs}</Button>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { useTranslations } from "../context/translations/TranslationsProvider";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "../components/Button";
 
 const Header = () => {
   const { translations: t } = useTranslations();
@@ -46,7 +47,7 @@ const Header = () => {
         </nav>
         <div className="flex items-center gap-4">
           <LanguageSwitcher />
-          <button>{t.getInTouch}</button>
+          <Button variant="primary">{t.getInTouch}</Button>
         </div>
       </div>
     </header>
