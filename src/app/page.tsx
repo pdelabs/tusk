@@ -10,8 +10,6 @@ import WhyChooseUs from "./WhyChooseUs";
 import Header from "./Header";
 
 export default function Home() {
-  const { translations: t } = useTranslations();
-
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
