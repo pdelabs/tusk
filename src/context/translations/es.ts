@@ -28,6 +28,8 @@ const es = {
   lamb: "Cordero/Carnero",
   lambDesc:
     "Carne ovina de alta calidad de Uruguay y Argentina, incluyendo canales y cortes de cordero y carnero con certificación Halal disponible.",
+  horse: "Caballo",
+  horseDesc: "Ofrecemos diferentes cortes de carne de caballo, refrigerados y congelados, tales como: delanteros incompletos (RFQ) y completos, nalga de adentro, nalga de afuera, bola de lomo y cortes premium. También vendemos menudencias y recortes de caballo.",
   dairy: "Productos Lácteos",
   dairyDesc:
     "Productos lácteos premium de Uruguay y Argentina que incluyen mantequilla, leche en polvo, leche UHT, suero en polvo y varios quesos.",

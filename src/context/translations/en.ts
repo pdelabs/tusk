@@ -25,6 +25,8 @@ const en = {
   beefDesc:
     "South American beef renowned for superior quality. All cuts available, chilled and frozen, including Black Angus and Organic certified beef.",
   lamb: "Lamb/Mutton",
+  horse: "Horse",
+  horseDesc: "We offer different horse meat cuts, chilled and frozen, such as: incomplete (RFQ) and full forequarters, topside, silverside, knuckle and premium cuts. We also sell horse offals and trimmings.",
   lambDesc:
     "High-quality ovine meat from Uruguay and Argentina, including lamb and mutton carcasses and cuts with Halal certification available.",
   dairy: "Dairy Products",
