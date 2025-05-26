@@ -67,7 +67,7 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
-            <Button variant="primary">{t.getInTouch}</Button>
+            <Button variant="secondary">{t.getInTouch}</Button>
           </div>
         </div>
       </header>
