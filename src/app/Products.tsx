@@ -18,7 +18,7 @@ const Products = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <ProductCard
-            imageSrc="/placeholder.svg?height=400&width=600"
+            imageSrc="/products/beef.png"
             imageAlt="Premium beef products"
             icon={<Beef className="h-6 w-6 text-primary" />}
             title={t.beef}
@@ -26,7 +26,7 @@ const Products = () => {
             learnMoreText={t.learnMore}
           />
           <ProductCard
-            imageSrc="/placeholder.svg?height=400&width=600"
+            imageSrc="/products/beef.png"
             imageAlt="Lamb and mutton products"
             icon={<Ham className="h-6 w-6 text-primary" />}
             title={t.lamb}
@@ -34,7 +34,7 @@ const Products = () => {
             learnMoreText={t.learnMore}
           />
           <ProductCard
-            imageSrc="/placeholder.svg?height=400&width=600"
+            imageSrc="/products/horse.png"
             imageAlt="Horse meat products"
             icon={<Ham className="h-6 w-6 text-primary" />}
             title={t.horse}
@@ -42,7 +42,7 @@ const Products = () => {
             learnMoreText={t.learnMore}
           />
           <ProductCard
-            imageSrc="/placeholder.svg?height=400&width=600"
+            imageSrc="/products/dairy.png"
             imageAlt="Dairy products"
             icon={<Milk className="h-6 w-6 text-primary" />}
             title={t.dairy}
@@ -50,7 +50,7 @@ const Products = () => {
             learnMoreText={t.learnMore}
           />
           <ProductCard
-            imageSrc="/placeholder.svg?height=400&width=600"
+            imageSrc="/products/chicken.png"
             imageAlt="Poultry products"
             icon={<Drumstick className="h-6 w-6 text-primary" />}
             title={t.poultry}
@@ -58,7 +58,7 @@ const Products = () => {
             learnMoreText={t.learnMore}
           />
           <ProductCard
-            imageSrc="/placeholder.svg?height=400&width=600"
+            imageSrc="/products/rice.png"
             imageAlt="Rice products"
             icon={<Wheat className="h-6 w-6 text-primary" />}
             title={t.rice}
@@ -66,7 +66,7 @@ const Products = () => {
             learnMoreText={t.learnMore}
           />
           <ProductCard
-            imageSrc="/placeholder.svg?height=400&width=600"
+            imageSrc="/products/grains.png"
             imageAlt="Grain products"
             icon={<Wheat className="h-6 w-6 text-primary" />}
             title={t.grains}
@@ -74,7 +74,7 @@ const Products = () => {
             learnMoreText={t.learnMore}
           />
           <ProductCard
-            imageSrc="/placeholder.svg?height=400&width=600"
+            imageSrc="/products/animal_feed.png"
             imageAlt="Animal feed products"
             icon={<Apple className="h-6 w-6 text-primary" />}
             title={t.animalFeed}
