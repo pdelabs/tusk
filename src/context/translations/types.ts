@@ -6,6 +6,22 @@ export type TranslationContextType = {
 
 export type Lang = "en" | "es" | "cn" | "ru";
 
+export type ProductKey =
+  | "beef"
+  | "lamb"
+  | "horse"
+  | "dairy"
+  | "poultry"
+  | "grains"
+  | "rice"
+  | "animalFeed";
+
+export type ProductDetail = {
+  summary: string;
+  highlights: readonly string[];
+  logistics: string;
+};
+
 export interface Translations {
   about: string;
   products: string;
@@ -43,6 +59,10 @@ export interface Translations {
   animalFeedDesc: string;
   viewAll: string;
   learnMore: string;
+  productHighlightsLabel: string;
+  productLogisticsLabel: string;
+  close: string;
+  productDetails: Record<ProductKey, ProductDetail>;
   globalTitle: string;
   globalSubtitle: string;
   supplierCountries: string;

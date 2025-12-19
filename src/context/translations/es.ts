@@ -45,6 +45,98 @@ const es = {
     "Alimentos para animales de alta calidad a base de maíz y soja, que cumplen con requisitos específicos de contenido para mercados globales.",
   viewAll: "Ver Todos los Productos",
   learnMore: "Más información",
+  productHighlightsLabel: "Puntos clave",
+  productLogisticsLabel: "Logística y certificaciones",
+  close: "Cerrar",
+  productDetails: {
+    beef: {
+      summary:
+        "La carne latinoamericana es reconocida por su calidad; ofrecemos todos los cortes bovinos enfriados o congelados, con y sin hueso.",
+      highlights: [
+        "Lomo (con y sin cordón), bife angosto/ancho, cuadril/corazón, nalga de adentro y de afuera, bola de lomo, peceto, cuadrada, paleta, aguja, pecho, brazuelo, garrón, etc.",
+        "Menudencias (lengua, hígado, riñón, corazón), recortes/trimmings y carne picada; huesos y otros ítems para China/Hong Kong",
+        "Cortes certificados Black Angus, orgánicos y con certificación Halal",
+      ],
+      logistics:
+        "Empaque al vacío; origen, packing y fechas de embarque se definen caso a caso.",
+    },
+    lamb: {
+      summary:
+        "Carne ovina de alta calidad demandada en Europa, Brasil, Rusia y Medio Oriente.",
+      highlights: [
+        "Carcasas y cortes de cordero y capón, con o sin hueso, enfriados o congelados",
+        "Piernas deshuesadas, racks, lomos, bife angosto y otros primales",
+        "Carcasas enteras o en 6 cortes; certificación Halal disponible",
+      ],
+      logistics:
+        "Tamaños, packing y logística se acuerdan según el pedido.",
+    },
+    horse: {
+      summary:
+        "Carne de caballo con demanda creciente; cortes enfriados y congelados.",
+      highlights: [
+        "Delanteros incompletos y completos",
+        "Nalga de adentro, nalga de afuera, bola de lomo y cortes nobles",
+        "Menudencias y trimmings disponibles",
+      ],
+      logistics:
+        "Documentación y empaques según exigencias del destino.",
+    },
+    dairy: {
+      summary:
+        "Productos lácteos de Uruguay y Argentina.",
+      highlights: [
+        "Manteca; leche en polvo entera y descremada; leche UHT entera y descremada",
+        "Suero y caseína",
+        "Quesos mozzarella, edam, gouda y otros",
+      ],
+      logistics:
+        "Paletizado de exportación; specs y packing se fijan por orden.",
+    },
+    poultry: {
+      summary:
+        "Pollos enteros y en cortes principalmente de Brasil y Argentina, también Uruguay.",
+      highlights: [
+        "Grillers y broilers de distintos rangos de peso; pollo entero deshuesado (shawarma)",
+        "Pechuga con/sin piel y hueso, muslos, piernas, alas, carne MDM",
+        "Menudencias (hígados, mollejas, corazones) y patas/garras; opciones Halal",
+      ],
+      logistics:
+        "Producto enfriado o congelado; pesos, certificaciones y packing según requerimientos del cliente.",
+    },
+    grains: {
+      summary: "Soja, trigo y maíz para consumo humano o animal.",
+      highlights: [
+        "Embarques a granel o embolsado en contenedor",
+        "Cumplimos humedad y proteína; programas OGM y no OGM según mercado",
+        "Derivados como harina (0, 00, 000, 0000) y aceites",
+      ],
+      logistics:
+        "Origen, proveedor, specs, pago y fechas de embarque se acuerdan caso a caso.",
+    },
+    rice: {
+      summary:
+        "Uruguay (6º exportador mundial) y Argentina proveen arroz largo, medio y corto.",
+      highlights: [
+        "Diferentes porcentajes de granos quebrados según mercado",
+        "Arroz pulido y parbolizado",
+        "Presentaciones variadas según necesidad",
+      ],
+      logistics:
+        "Origen, especificaciones y packing se definen para cada contrato.",
+    },
+    animalFeed: {
+      summary:
+        "Pre-mezclas de soja y maíz para alimento animal, exportadas a Asia y otros destinos.",
+      highlights: [
+        "Fórmula estándar 80% soja / 20% maíz",
+        "Alternativa 95% soja / 5% maíz, ambas con ~1% de cloruro de sodio",
+        "Parámetros consistentes para uso en nutrición animal",
+      ],
+      logistics:
+        "Bolsas o a granel según el pedido.",
+    },
+  },
   globalTitle: "Nuestro Alcance Global",
   globalSubtitle:
     "Conectando productores sudamericanos con mercados mundiales a través de relaciones comerciales establecidas.",

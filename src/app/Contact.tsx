@@ -1,6 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useTranslations } from "../context/translations/TranslationsProvider";
 import { sendEmail } from "./sendEmail";
+import Button from "../components/Button";
 
 const Contact = () => {
   const { translations: t } = useTranslations();
@@ -83,7 +84,7 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 flex-shrink-0" />
-                <span>contact@tusktrade.com</span>
+                <a href="mailto:contact@tusktrade.com">contact@tusktrade.com</a>
               </div>
             </div>
           </div>
@@ -155,7 +156,7 @@ const Contact = () => {
                   className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 ></textarea>
               </div>
-              <button className="w-full">{t.sendMessage}</button>
+              <Button className="w-full">{t.sendMessage}</Button>
             </form>
           </div>
         </div>

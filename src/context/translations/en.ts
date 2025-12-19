@@ -45,6 +45,98 @@ const en = {
     "High-quality animal feed meals based on corn and soybean, meeting specific content requirements for global markets.",
   viewAll: "View All Products",
   learnMore: "Learn more",
+  productHighlightsLabel: "Key highlights",
+  productLogisticsLabel: "Logistics & certifications",
+  close: "Close",
+  productDetails: {
+    beef: {
+      summary:
+        "Latin American beef renowned for excellent quality; all cuts offered chilled or frozen, bone-in or boneless.",
+      highlights: [
+        "Striploin, ribeye, tenderloin, rump, knuckle, inside/outside round, brisket, chuck, shank and more",
+        "Offals (tongue, liver, kidney, heart), trimmings and minced beef; bones and other items for China/Hong Kong",
+        "Programs available: Black Angus, organic, Halal-certified",
+      ],
+      logistics:
+        "Vacuum packed; origin, packing and shipment dates are defined per order.",
+    },
+    lamb: {
+      summary:
+        "Premium lamb and mutton in demand across Europe, Brazil, Russia and the Middle East.",
+      highlights: [
+        "Carcasses and cuts, bone-in or boneless, chilled or frozen",
+        "Boneless legs, racks, loins, striploin and other primals",
+        "Whole carcasses in different sizes or 6-way; Halal certification available",
+      ],
+      logistics:
+        "Sizes, packing and shipping are arranged case by case.",
+    },
+    horse: {
+      summary:
+        "Rising-demand horse meat supplied chilled and frozen.",
+      highlights: [
+        "Incomplete and complete forequarters",
+        "Inside and outside rounds, knuckle/bola de lomo and premium muscles",
+        "Offals and trimmings available",
+      ],
+      logistics:
+        "Documentation and packing aligned with destination import rules.",
+    },
+    dairy: {
+      summary:
+        "Dairy ingredients and finished goods from Uruguay and Argentina.",
+      highlights: [
+        "Butter; whole and skim milk powder; UHT whole/skim milk",
+        "Whey and casein",
+        "Mozzarella, edam, gouda and other cheeses",
+      ],
+      logistics:
+        "Export palletization; specs and packing agreed per order.",
+    },
+    poultry: {
+      summary:
+        "Whole chickens and cuts mainly from Brazil and Argentina, plus supply from Uruguay.",
+      highlights: [
+        "Grillers and broilers across weight ranges; whole deboned birds for shawarma",
+        "Breast with/without skin and bone, thighs, drumsticks, wings, MDM",
+        "Offals (livers, gizzards, hearts) and feet; Halal options",
+      ],
+      logistics:
+        "Chilled or frozen; weight ranges, certification and packing per buyer needs.",
+    },
+    grains: {
+      summary: "Soybean, wheat and corn for human or animal use.",
+      highlights: [
+        "Bulk vessel or bagged container loadings",
+        "Meets moisture and protein specs; GMO/non-GMO programs per market",
+        "Derivatives like wheat flour (0, 00, 000, 0000) and oils",
+      ],
+      logistics:
+        "Origin, supplier, specs, payment and shipment dates defined case by case.",
+    },
+    rice: {
+      summary:
+        "Uruguay (top 6 exporter) and Argentina supply long, medium and short grain rice.",
+      highlights: [
+        "Broken percentages adjusted for target markets",
+        "Polished and parboiled options",
+        "Available in multiple packing formats",
+      ],
+      logistics:
+        "Origin, specs and packing finalized per contract.",
+    },
+    animalFeed: {
+      summary:
+        "Soy and corn premixes for animal feed, supplied to Asia and beyond.",
+      highlights: [
+        "Standard 80% soy / 20% corn formula",
+        "Alternative 95% soy / 5% corn, both with ~1% sodium chloride",
+        "Consistent specs for feed applications",
+      ],
+      logistics:
+        "Bagged or bulk options set per order requirements.",
+    },
+  },
   globalTitle: "Our Global Reach",
   globalSubtitle:
     "Connecting South American producers with markets worldwide through established trade relationships.",

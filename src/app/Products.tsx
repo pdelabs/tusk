@@ -1,11 +1,85 @@
 "use client";
+import type { ReactNode } from "react";
 import { Beef, Drumstick, Milk, Wheat, Apple, Ham } from "lucide-react";
 import ProductCard from "./ProductCard";
-
+import { ProductKey } from "../context/translations/types";
 import { useTranslations } from "../context/translations/TranslationsProvider";
 
 const Products = () => {
   const { translations: t } = useTranslations();
+  const products: Array<{
+    key: ProductKey;
+    imageSrc: string;
+    imageAlt: string;
+    icon: ReactNode;
+    title: string;
+    description: string;
+  }> = [
+    {
+      key: "beef",
+      imageSrc: "/products/beef.png",
+      imageAlt: t.beef,
+      icon: <Beef className="h-6 w-6 text-primary" />,
+      title: t.beef,
+      description: t.beefDesc,
+    },
+    {
+      key: "lamb",
+      imageSrc: "/products/mutton.png",
+      imageAlt: t.lamb,
+      icon: <Ham className="h-6 w-6 text-primary" />,
+      title: t.lamb,
+      description: t.lambDesc,
+    },
+    {
+      key: "horse",
+      imageSrc: "/products/horse.png",
+      imageAlt: t.horse,
+      icon: <Ham className="h-6 w-6 text-primary" />,
+      title: t.horse,
+      description: t.horseDesc,
+    },
+    {
+      key: "dairy",
+      imageSrc: "/products/dairy.png",
+      imageAlt: t.dairy,
+      icon: <Milk className="h-6 w-6 text-primary" />,
+      title: t.dairy,
+      description: t.dairyDesc,
+    },
+    {
+      key: "poultry",
+      imageSrc: "/products/chicken.png",
+      imageAlt: t.poultry,
+      icon: <Drumstick className="h-6 w-6 text-primary" />,
+      title: t.poultry,
+      description: t.poultryDesc,
+    },
+    {
+      key: "rice",
+      imageSrc: "/products/rice.png",
+      imageAlt: t.rice,
+      icon: <Wheat className="h-6 w-6 text-primary" />,
+      title: t.rice,
+      description: t.riceDesc,
+    },
+    {
+      key: "grains",
+      imageSrc: "/products/grains.png",
+      imageAlt: t.grains,
+      icon: <Wheat className="h-6 w-6 text-primary" />,
+      title: t.grains,
+      description: t.grainsDesc,
+    },
+    {
+      key: "animalFeed",
+      imageSrc: "/products/animal_feed.png",
+      imageAlt: t.animalFeed,
+      icon: <Apple className="h-6 w-6 text-primary" />,
+      title: t.animalFeed,
+      description: t.animalFeedDesc,
+    },
+  ];
   return (
     <section id="products" className="py-16 md:py-24">
       <div className="container">
@@ -17,70 +91,21 @@ const Products = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <ProductCard
-            imageSrc="/products/beef.png"
-            imageAlt="Premium beef products"
-            icon={<Beef className="h-6 w-6 text-primary" />}
-            title={t.beef}
-            description={t.beefDesc}
-            learnMoreText={t.learnMore}
-          />
-          <ProductCard
-            imageSrc="/products/mutton.png"
-            imageAlt="Lamb and mutton products"
-            icon={<Ham className="h-6 w-6 text-primary" />}
-            title={t.lamb}
-            description={t.lambDesc}
-            learnMoreText={t.learnMore}
-          />
-          <ProductCard
-            imageSrc="/products/horse.png"
-            imageAlt="Horse meat products"
-            icon={<Ham className="h-6 w-6 text-primary" />}
-            title={t.horse}
-            description={t.horseDesc}
-            learnMoreText={t.learnMore}
-          />
-          <ProductCard
-            imageSrc="/products/dairy.png"
-            imageAlt="Dairy products"
-            icon={<Milk className="h-6 w-6 text-primary" />}
-            title={t.dairy}
-            description={t.dairyDesc}
-            learnMoreText={t.learnMore}
-          />
-          <ProductCard
-            imageSrc="/products/chicken.png"
-            imageAlt="Poultry products"
-            icon={<Drumstick className="h-6 w-6 text-primary" />}
-            title={t.poultry}
-            description={t.poultryDesc}
-            learnMoreText={t.learnMore}
-          />
-          <ProductCard
-            imageSrc="/products/rice.png"
-            imageAlt="Rice products"
-            icon={<Wheat className="h-6 w-6 text-primary" />}
-            title={t.rice}
-            description={t.riceDesc}
-            learnMoreText={t.learnMore}
-          />
-          <ProductCard
-            imageSrc="/products/grains.png"
-            imageAlt="Grain products"
-            icon={<Wheat className="h-6 w-6 text-primary" />}
-            title={t.grains}
-            description={t.grainsDesc}
-            learnMoreText={t.learnMore}
-          />
-          <ProductCard
-            imageSrc="/products/animal_feed.png"
-            imageAlt="Animal feed products"
-            icon={<Apple className="h-6 w-6 text-primary" />}
-            title={t.animalFeed}
-            description={t.animalFeedDesc}
-            learnMoreText={t.learnMore}
-          />
+          {products.map((product) => (
+            <ProductCard
+              key={product.key}
+              imageSrc={product.imageSrc}
+              imageAlt={product.imageAlt}
+              icon={product.icon}
+              title={product.title}
+              description={product.description}
+              learnMoreText={t.learnMore}
+              highlightsLabel={t.productHighlightsLabel}
+              logisticsLabel={t.productLogisticsLabel}
+              closeText={t.close}
+              details={t.productDetails[product.key]}
+            />
+          ))}
         </div>
       </div>
     </section>
