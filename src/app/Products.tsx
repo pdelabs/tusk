@@ -26,7 +26,7 @@ const Products = () => {
             learnMoreText={t.learnMore}
           />
           <ProductCard
-            imageSrc="/products/beef.png"
+            imageSrc="/products/mutton.png"
             imageAlt="Lamb and mutton products"
             icon={<Ham className="h-6 w-6 text-primary" />}
             title={t.lamb}
