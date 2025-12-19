@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import WhyChooseUs from "./WhyChooseUs";
 import Header from "./Header";
 import Button from "../components/Button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
 const HeroSection = () => {
   const { translations: t } = useTranslations();
   return (
-    <section className="relative py-20 md:py-28 lg:py-36 overflow-hidden">
+    <section className="relative py-20 md:py-28 lg:py-36 overflow-hidden min-h-[calc(100vh-48px)]">
       <div className="absolute inset-0 z-0">
         <Image
           src="/imagen1.png"
@@ -48,8 +49,12 @@ const HeroSection = () => {
             {t.heroSubtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Button variant="primary">{t.exploreProducts}</Button>
-            <Button variant="secondary">{t.contactUs}</Button>
+            <Link href="#products">
+              <Button variant="primary">{t.exploreProducts}</Button>
+            </Link>
+            <Link href="#contact">
+              <Button variant="secondary">{t.contactUs}</Button>
+            </Link>
           </div>
         </div>
       </div>

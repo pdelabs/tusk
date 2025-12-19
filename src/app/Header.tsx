@@ -10,15 +10,17 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-2 font-bold text-xl">
-          <Image
-            src="/logo.png"
-            alt="TUSK Trade Company Logo"
-            width={180}
-            height={40}
-            className="rounded-full"
-          />
-        </div>
+        <Link href="#hero">
+          <div className="flex items-center gap-2 font-bold text-xl">
+            <Image
+              src="/logo.png"
+              alt="TUSK Trade Company Logo"
+              width={180}
+              height={40}
+              className="rounded-full"
+            />
+          </div>
+        </Link>
         <nav className="hidden md:flex items-center gap-6">
           <Link
             href="#about"
@@ -47,7 +49,9 @@ const Header = () => {
         </nav>
         <div className="flex items-center gap-4">
           <LanguageSwitcher />
-          <Button variant="primary">{t.getInTouch}</Button>
+          <Link href="#contact">
+            <Button variant="primary">{t.getInTouch}</Button>
+          </Link>
         </div>
       </div>
     </header>
