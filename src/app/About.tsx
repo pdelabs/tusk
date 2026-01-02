@@ -17,7 +17,7 @@ const About = () => {
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg?height=800&width=600"
+              src="/container.jpeg"
               alt="Food trading operations"
               fill
               className="object-cover"
