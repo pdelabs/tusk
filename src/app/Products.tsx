@@ -1,6 +1,6 @@
 "use client";
 import type { ReactNode } from "react";
-import { Beef, Drumstick, Milk, Wheat, Apple, Ham } from "lucide-react";
+import { Beef, Drumstick, Milk, Apple, Ham } from "lucide-react";
 import ProductCard from "./ProductCard";
 import { ProductKey } from "../context/translations/types";
 import { useTranslations } from "../context/translations/TranslationsProvider";
@@ -54,22 +54,6 @@ const Products = () => {
       icon: <Drumstick className="h-6 w-6 text-primary" />,
       title: t.poultry,
       description: t.poultryDesc,
-    },
-    {
-      key: "rice",
-      imageSrc: "/products/rice.png",
-      imageAlt: t.rice,
-      icon: <Wheat className="h-6 w-6 text-primary" />,
-      title: t.rice,
-      description: t.riceDesc,
-    },
-    {
-      key: "grains",
-      imageSrc: "/products/grains.png",
-      imageAlt: t.grains,
-      icon: <Wheat className="h-6 w-6 text-primary" />,
-      title: t.grains,
-      description: t.grainsDesc,
     },
     {
       key: "animalFeed",

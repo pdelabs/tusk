@@ -70,7 +70,8 @@ const Contact = () => {
                 <MapPin className="h-5 w-5 flex-shrink-0 mt-1" />
                 <div>
                   <p>TUSK Trade Company</p>
-                  <p>Mantua 6706 Of. 005</p>
+                  <p>Av. de las Américas 7777</p>
+                  <p>Edificio Faros de Carrasco, Of. 102</p>
                   <p>Montevideo, 11500</p>
                   <p>Uruguay</p>
                 </div>

@@ -12,9 +12,9 @@ const es = {
   contactUs: "Contáctenos",
   aboutTitle: "Acerca de TUSK Trade Company",
   aboutText1:
-    "Con sede en Uruguay, TUSK Trade Company se especializa en el comercio global de productos alimenticios premium de América Latina. Nuestro equipo aporta una amplia experiencia en el comercio internacional de alimentos, trabajando con importantes clientes en varios mercados mundiales.",
+    "TUSK Trade Company es una empresa de comercio internacional con sede en Uruguay, enfocada en productos alimenticios premium de América Latina. Fundada en 2010, nuestro equipo aporta una amplia experiencia en el comercio internacional de alimentos, trabajando con clientes clave en diversos mercados globales.",
   aboutText2:
-    "Creemos firmemente que nuestra región tiene el potencial de convertirse en uno de los principales proveedores de productos alimenticios del mundo, y queremos participar activamente en este proceso.",
+    "Creemos que los grandes negocios se construyen sobre la confianza, asociaciones sólidas y relaciones a largo plazo, conectando productores confiables con los mercados globales a través de un comercio transparente y eficiente.",
   qualityGuaranteed: "Calidad Garantizada",
   qualityText: "Productos de los productores más importantes de la región",
   competitivePricing: "Precios Competitivos",
@@ -186,6 +186,9 @@ const es = {
   privacy: "Política de Privacidad",
   cookies: "Política de Cookies",
   rights: "Todos los derechos reservados.",
+  unitedStates: "Estados Unidos",
+  europeanUnion: "Unión Europea",
+  unitedKingdom: "Reino Unido"
 } as const;
 
 export default es;

@@ -1,4 +1,3 @@
-import { ShieldCheck, TrendingUp } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "../context/translations/TranslationsProvider";
 
@@ -14,26 +13,7 @@ const About = () => {
             </h2>
             <p className="text-lg text-muted-foreground mb-6">{t.aboutText1}</p>
             <p className="text-lg text-muted-foreground mb-6">{t.aboutText2}</p>
-            <div className="flex flex-col sm:flex-row gap-4 mt-8">
-              <div className="flex items-start gap-3">
-                <ShieldCheck className="h-6 w-6 text-primary mt-1" />
-                <div>
-                  <h3 className="font-medium">{t.qualityGuaranteed}</h3>
-                  <p className="text-sm text-muted-foreground">
-                    {t.qualityText}
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <TrendingUp className="h-6 w-6 text-primary mt-1" />
-                <div>
-                  <h3 className="font-medium">{t.competitivePricing}</h3>
-                  <p className="text-sm text-muted-foreground">
-                    {t.pricingText}
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div className="flex flex-col sm:flex-row gap-4 mt-8"> </div>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <Image
