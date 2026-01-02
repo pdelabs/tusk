@@ -1,6 +1,6 @@
 "use client";
 import type { ReactNode } from "react";
-import { Beef, Drumstick, Milk, Wheat, Apple, Ham } from "lucide-react";
+import { Beef, Drumstick, Milk, Apple, Ham } from "lucide-react";
 import ProductCard from "./ProductCard";
 import { ProductKey } from "../context/translations/types";
 import { useTranslations } from "../context/translations/TranslationsProvider";

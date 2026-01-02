@@ -1,4 +1,3 @@
-import { MedalIcon, ShieldCheck, TrendingUp } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "../context/translations/TranslationsProvider";
 
