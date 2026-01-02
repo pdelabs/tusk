@@ -56,22 +56,6 @@ const Products = () => {
       description: t.poultryDesc,
     },
     {
-      key: "rice",
-      imageSrc: "/products/rice.png",
-      imageAlt: t.rice,
-      icon: <Wheat className="h-6 w-6 text-primary" />,
-      title: t.rice,
-      description: t.riceDesc,
-    },
-    {
-      key: "grains",
-      imageSrc: "/products/grains.png",
-      imageAlt: t.grains,
-      icon: <Wheat className="h-6 w-6 text-primary" />,
-      title: t.grains,
-      description: t.grainsDesc,
-    },
-    {
       key: "animalFeed",
       imageSrc: "/products/animal_feed.png",
       imageAlt: t.animalFeed,

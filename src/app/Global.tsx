@@ -52,6 +52,18 @@ const Global = () => {
                   <div className="h-2 w-2 rounded-full bg-primary"></div>
                   <span>Chile</span>
                 </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-2 w-2 rounded-full bg-primary"></div>
+                  <span>Nicaragua</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-2 w-2 rounded-full bg-primary"></div>
+                  <span>Panama</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-2 w-2 rounded-full bg-primary"></div>
+                  <span>{t.unitedStates}</span>
+                </div>
               </div>
             </div>
 
@@ -64,15 +76,11 @@ const Global = () => {
               <div className="grid grid-cols-2 gap-2">
                 <div className="flex items-center gap-2">
                   <div className="h-2 w-2 rounded-full bg-primary"></div>
-                  <span>Russian Federation</span>
+                  <span>{t.unitedKingdom}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="h-2 w-2 rounded-full bg-primary"></div>
-                  <span>United Kingdom</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="h-2 w-2 rounded-full bg-primary"></div>
-                  <span>Germany</span>
+                  <span>{t.europeanUnion}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="h-2 w-2 rounded-full bg-primary"></div>
@@ -80,7 +88,7 @@ const Global = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="h-2 w-2 rounded-full bg-primary"></div>
-                  <span>United States</span>
+                  <span>{t.unitedStates}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="h-2 w-2 rounded-full bg-primary"></div>

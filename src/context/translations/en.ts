@@ -11,9 +11,9 @@ const en = {
   contactUs: "Contact Us",
   aboutTitle: "About TUSK Trade Company",
   aboutText1:
-    "Based in Uruguay, TUSK Trade Company specializes in the global trading of premium Latin American food products. Our team brings vast experience in international food trading, working with important clients across various world markets.",
+    "TUSK Trade Company is a Uruguay-based international trading company focused on premium Latin American food products. Founded in 2010, our team brings extensive experience in international food trading, working with key clients across various global markets.",
   aboutText2:
-    "We strongly believe that our region has the potential to become one of the leading suppliers of food products in the world, and we want to actively participate in this process.",
+    "We believe that great business is built on trust, strong partnerships, and long-term relationships, connecting reliable producers with global markets through transparent and efficient trade.",
   qualityGuaranteed: "Quality Guaranteed",
   qualityText: "Products from the most important producers in the region",
   competitivePricing: "Competitive Pricing",
@@ -186,5 +186,8 @@ const en = {
   privacy: "Privacy Policy",
   cookies: "Cookie Policy",
   rights: "All rights reserved.",
+  unitedStates: "United States",
+  europeanUnion: "European Union",
+  unitedKingdom: "United Kingdom"
 } as const;
 export default en;

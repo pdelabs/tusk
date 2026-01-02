@@ -104,6 +104,9 @@ export interface Translations {
   privacy: string;
   cookies: string;
   rights: string;
+  unitedStates: string;
+  europeanUnion: string;
+  unitedKingdom: string;
 }
 
 export type TranslationsKeys = keyof Translations;
