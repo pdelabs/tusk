@@ -92,6 +92,14 @@ const Global = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="h-2 w-2 rounded-full bg-primary"></div>
+                  <span>{t.philippines}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-2 w-2 rounded-full bg-primary"></div>
+                  <span>Taiwan</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-2 w-2 rounded-full bg-primary"></div>
                   <span>{t.andMore}</span>
                 </div>
               </div>

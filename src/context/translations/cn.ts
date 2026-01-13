@@ -181,6 +181,7 @@ const cn = {
   rights: "版权所有。",
   unitedStates: "美国",
   europeanUnion: "欧洲联盟",
-  unitedKingdom: "英國"
+  unitedKingdom: "英國",
+  philippines: "Philippines"
 } as const;
 export default cn;

@@ -25,7 +25,6 @@ const Contact = () => {
       form.querySelector("#message") as HTMLTextAreaElement
     )?.value.trim();
 
-    // Basic validation
     if (!name || !email || !products || !message) {
       alert("Please fill in all required fields.");
       return;
