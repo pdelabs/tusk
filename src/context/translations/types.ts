@@ -107,6 +107,7 @@ export interface Translations {
   unitedStates: string;
   europeanUnion: string;
   unitedKingdom: string;
+  philippines: string;
 }
 
 export type TranslationsKeys = keyof Translations;

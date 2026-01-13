@@ -186,6 +186,7 @@ const ru = {
   rights: "Все права защищены.",
   unitedStates: "Соединенные Штаты",
   europeanUnion: "Евросоюз",
-  unitedKingdom: "Великобритания"
+  unitedKingdom: "Великобритания",
+  philippines: "Philippines"
 } as const;
 export default ru;

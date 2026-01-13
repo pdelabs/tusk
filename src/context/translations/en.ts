@@ -188,6 +188,7 @@ const en = {
   rights: "All rights reserved.",
   unitedStates: "United States",
   europeanUnion: "European Union",
-  unitedKingdom: "United Kingdom"
+  unitedKingdom: "United Kingdom",
+  philippines: "Philippines",
 } as const;
 export default en;
