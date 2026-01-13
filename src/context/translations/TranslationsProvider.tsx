@@ -3,7 +3,6 @@ import { createContext, useContext, useState } from "react";
 import { Lang, TranslationContextType, Translations } from "./types";
 import translationsData from "./translations";
 
-// Set dynamically depending on the user's browser language
 const DEFAULT_LANG: Lang = "en";
 
 const TranslationContext = createContext<TranslationContextType | null>(null);
