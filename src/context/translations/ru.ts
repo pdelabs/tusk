@@ -193,6 +193,12 @@ const ru = {
   unitedStates: "Соединенные Штаты",
   europeanUnion: "Евросоюз",
   unitedKingdom: "Великобритания",
-  philippines: "Philippines"
+  philippines: "Philippines",
+  multipleProducts: "Несколько продуктов",
+  formFillRequired: "Пожалуйста, заполните все обязательные поля.",
+  formInvalidEmail: "Пожалуйста, введите корректный адрес электронной почты.",
+  formSuccess: "Ваше сообщение успешно отправлено!",
+  formError: "Произошла ошибка при отправке. Пожалуйста, попробуйте снова.",
+  formSending: "Отправка...",
 } as const;
 export default ru;

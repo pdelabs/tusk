@@ -188,6 +188,12 @@ const cn = {
   unitedStates: "美国",
   europeanUnion: "欧洲联盟",
   unitedKingdom: "英國",
-  philippines: "Philippines"
+  philippines: "Philippines",
+  multipleProducts: "多种产品",
+  formFillRequired: "请填写所有必填字段。",
+  formInvalidEmail: "请输入有效的电子邮件地址。",
+  formSuccess: "您的消息已成功发送！",
+  formError: "发送消息时出现错误，请稍后再试。",
+  formSending: "发送中...",
 } as const;
 export default cn;
