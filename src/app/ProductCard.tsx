@@ -16,6 +16,7 @@ import { ProductDetail } from "../context/translations/types";
 interface ProductCardProps {
   imageSrc: string;
   imageAlt: string;
+  dialogImageSrc: string;
   icon: React.ReactNode;
   title: string;
   description: string;
@@ -29,6 +30,7 @@ interface ProductCardProps {
 const ProductCard = ({
   imageSrc,
   imageAlt,
+  dialogImageSrc,
   icon,
   title,
   description,
@@ -67,6 +69,15 @@ const ProductCard = ({
         </div>
       </div>
       <DialogContent className="sm:max-w-lg">
+        <div className="flex h-56 items-center justify-center overflow-hidden rounded-md bg-muted">
+          <Image
+            src={dialogImageSrc}
+            alt={imageAlt}
+            width={800}
+            height={600}
+            className="h-full w-full object-contain"
+          />
+        </div>
         <DialogHeader>
           <DialogTitle>{title}</DialogTitle>
           <DialogDescription>{details.summary}</DialogDescription>

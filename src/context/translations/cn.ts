@@ -142,15 +142,21 @@ const cn = {
   valueTitle: "为何选择TUSK",
   valueSubtitle:
     "我们专业、高效、灵活的服务为每一笔交易增值。",
-  qualityAssurance: "品质保证",
-  qualityAssuranceText:
-    "我们与各国最重要的生产商和出口商合作，确保产品的最高质量。",
-  competitivePricingLong: "价格具有竞争力",
-  competitivePricingText:
-    "我们与主要供应商保持良好合作关系，能够提供市场上最具竞争力的价格。",
-  reliableDelivery: "可靠交付",
-  reliableDeliveryText:
-    "我们满足客户关于发货时间及其他交易关键方面的要求。",
+  industryExpertise: "行业专业知识",
+  industryExpertiseText:
+    "我们将深厚的市场知识与肉类和蛋白质产品国际贸易的丰富经验相结合，确保运营高效且管理有序。",
+  trustedNetwork: "可信赖的全球网络",
+  trustedNetworkText:
+    "我们与全球精心挑选的可靠生产商、加工商和买家合作。我们的关系建立在信任、一致性和长期合作的基础上。",
+  reliabilityCommitment: "可靠性与承诺",
+  reliabilityCommitmentText:
+    "我们的合作伙伴知道他们可以依赖我们。我们对每一笔交易负全责，从原产地到目的地保持清晰的沟通和密切的跟进。",
+  executionExcellence: "卓越执行",
+  executionExcellenceText:
+    "在国际贸易中，细节至关重要。我们在整个过程中积极参与，确保操作顺利高效地执行。",
+  partnershipApproach: "合作伙伴关系理念",
+  partnershipApproachText:
+    "我们将每一笔交易视为长期关系的一部分。我们的目标是建立可持续的合作伙伴关系，为所有相关方带来价值和增长。",
   contactTitle: "让我们讨论您的需求",
   contactText:
     "我们始终致力于与专业且值得信赖的公司建立长期业务关系，共同推广南美食品产品。",

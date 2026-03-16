@@ -11,30 +11,34 @@ const Products = () => {
     key: ProductKey;
     imageSrc: string;
     imageAlt: string;
+    dialogImageSrc: string;
     icon: ReactNode;
     title: string;
     description: string;
   }> = [
     {
       key: "beef",
-      imageSrc: "/products/beef.png",
+      imageSrc: "/products/beef_1.png",
       imageAlt: t.beef,
+      dialogImageSrc: "/products/partes-de-la-vaca.jpg",
       icon: <Beef className="h-6 w-6 text-primary" />,
       title: t.beef,
       description: t.beefDesc,
     },
     {
       key: "lamb",
-      imageSrc: "/products/mutton.png",
+      imageSrc: "/products/lamb-2.jpg",
       imageAlt: t.lamb,
+      dialogImageSrc: "/products/mutton.png",
       icon: <Ham className="h-6 w-6 text-primary" />,
       title: t.lamb,
       description: t.lambDesc,
     },
     {
       key: "horse",
-      imageSrc: "/products/horse.png",
+      imageSrc: "/products/horse_1.png",
       imageAlt: t.horse,
+      dialogImageSrc: "/products/horse.png",
       icon: <Ham className="h-6 w-6 text-primary" />,
       title: t.horse,
       description: t.horseDesc,
@@ -43,14 +47,16 @@ const Products = () => {
       key: "dairy",
       imageSrc: "/products/dairy.png",
       imageAlt: t.dairy,
+      dialogImageSrc: "/products/dairy-2.jpg",
       icon: <Milk className="h-6 w-6 text-primary" />,
       title: t.dairy,
       description: t.dairyDesc,
     },
     {
       key: "poultry",
-      imageSrc: "/products/chicken.png",
+      imageSrc: "/products/chicken_1.png",
       imageAlt: t.poultry,
+      dialogImageSrc: "/products/chicken-meat.jpg",
       icon: <Drumstick className="h-6 w-6 text-primary" />,
       title: t.poultry,
       description: t.poultryDesc,
@@ -59,6 +65,7 @@ const Products = () => {
       key: "animalFeed",
       imageSrc: "/products/animal_feed.png",
       imageAlt: t.animalFeed,
+      dialogImageSrc: "/products/animal_feed.png",
       icon: <Apple className="h-6 w-6 text-primary" />,
       title: t.animalFeed,
       description: t.animalFeedDesc,
@@ -80,6 +87,7 @@ const Products = () => {
               key={product.key}
               imageSrc={product.imageSrc}
               imageAlt={product.imageAlt}
+              dialogImageSrc={product.dialogImageSrc}
               icon={product.icon}
               title={product.title}
               description={product.description}
