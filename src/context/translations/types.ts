@@ -112,6 +112,12 @@ export interface Translations {
   europeanUnion: string;
   unitedKingdom: string;
   philippines: string;
+  multipleProducts: string;
+  formFillRequired: string;
+  formInvalidEmail: string;
+  formSuccess: string;
+  formError: string;
+  formSending: string;
 }
 
 export type TranslationsKeys = keyof Translations;

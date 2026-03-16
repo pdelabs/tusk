@@ -196,6 +196,12 @@ const es = {
   europeanUnion: "Unión Europea",
   unitedKingdom: "Reino Unido",
   philippines: "Filipinas",
+  multipleProducts: "Múltiples Productos",
+  formFillRequired: "Por favor completá todos los campos requeridos.",
+  formInvalidEmail: "Por favor ingresá una dirección de email válida.",
+  formSuccess: "¡Tu mensaje fue enviado con éxito!",
+  formError: "Hubo un error al enviar tu mensaje. Por favor intentá de nuevo.",
+  formSending: "Enviando...",
 } as const;
 
 export default es;

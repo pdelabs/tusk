@@ -196,5 +196,11 @@ const en = {
   europeanUnion: "European Union",
   unitedKingdom: "United Kingdom",
   philippines: "Philippines",
+  multipleProducts: "Multiple Products",
+  formFillRequired: "Please fill in all required fields.",
+  formInvalidEmail: "Please enter a valid email address.",
+  formSuccess: "Your message has been sent successfully!",
+  formError: "There was an error sending your message. Please try again later.",
+  formSending: "Sending...",
 } as const;
 export default en;

@@ -1,54 +1,47 @@
 import { Mail, MapPin, Phone } from "lucide-react";
+import { useState } from "react";
 import { useTranslations } from "../context/translations/TranslationsProvider";
 import { sendEmail } from "./sendEmail";
 import Button from "../components/Button";
 
+type FormStatus = "idle" | "sending" | "success" | "error";
+
 const Contact = () => {
   const { translations: t } = useTranslations();
+  const [status, setStatus] = useState<FormStatus>("idle");
+  const [formError, setFormError] = useState<string | null>(null);
 
   const handleSubmitContact = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setFormError(null);
 
     const form = e.currentTarget;
-    const name = (
-      form.querySelector("#name") as HTMLInputElement
-    )?.value.trim();
-    const company = (
-      form.querySelector("#company") as HTMLInputElement
-    )?.value.trim();
-    const email = (
-      form.querySelector("#email") as HTMLInputElement
-    )?.value.trim();
-    const products = (form.querySelector("#products") as HTMLSelectElement)
-      ?.value;
-    const message = (
-      form.querySelector("#message") as HTMLTextAreaElement
-    )?.value.trim();
+    const name = (form.querySelector("#name") as HTMLInputElement)?.value.trim();
+    const company = (form.querySelector("#company") as HTMLInputElement)?.value.trim();
+    const email = (form.querySelector("#email") as HTMLInputElement)?.value.trim();
+    const products = (form.querySelector("#products") as HTMLSelectElement)?.value;
+    const message = (form.querySelector("#message") as HTMLTextAreaElement)?.value.trim();
 
     if (!name || !email || !products || !message) {
-      alert("Please fill in all required fields.");
+      setFormError(t.formFillRequired);
       return;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      alert("Please enter a valid email address.");
+      setFormError(t.formInvalidEmail);
       return;
     }
 
+    setStatus("sending");
     try {
       const formattedMessage = `Email enviado desde el formulario de contacto de la web.\n\nNombre: ${name}\nCompañía: ${company}\nEmail: ${email}\nProductos de interés: ${products}\nMensaje: ${message}`;
-      await sendEmail({
-        name,
-        email,
-        message: formattedMessage,
-      });
-
-      alert("Your message has been sent successfully!");
+      await sendEmail({ name, email, message: formattedMessage });
+      setStatus("success");
       form.reset();
     } catch (error) {
       console.error("Failed to send email:", error);
-      alert("There was an error sending your message. Please try again later.");
+      setStatus("error");
     }
   };
 
@@ -138,9 +131,9 @@ const Contact = () => {
                   <option value="lamb">{t.lamb}</option>
                   <option value="poultry">{t.poultry}</option>
                   <option value="dairy">{t.dairy}</option>
-                  <option value="horse">Horse Meat</option>
+                  <option value="horse">{t.horse}</option>
                   <option value="feed">{t.animalFeed}</option>
-                  <option value="multiple">Multiple Products</option>
+                  <option value="multiple">{t.multipleProducts}</option>
                 </select>
               </div>
               <div className="space-y-2">
@@ -154,7 +147,20 @@ const Contact = () => {
                   className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 ></textarea>
               </div>
-              <Button className="w-full">{t.sendMessage}</Button>
+
+              {formError && (
+                <p className="text-sm text-red-600">{formError}</p>
+              )}
+              {status === "success" && (
+                <p className="text-sm text-green-600">{t.formSuccess}</p>
+              )}
+              {status === "error" && (
+                <p className="text-sm text-red-600">{t.formError}</p>
+              )}
+
+              <Button className="w-full" disabled={status === "sending"}>
+                {status === "sending" ? t.formSending : t.sendMessage}
+              </Button>
             </form>
           </div>
         </div>
