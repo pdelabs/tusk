@@ -139,8 +139,6 @@ const Contact = () => {
                   <option value="poultry">{t.poultry}</option>
                   <option value="dairy">{t.dairy}</option>
                   <option value="horse">Horse Meat</option>
-                  <option value="rice">Rice</option>
-                  <option value="grains">{t.grains}</option>
                   <option value="feed">{t.animalFeed}</option>
                   <option value="multiple">Multiple Products</option>
                 </select>

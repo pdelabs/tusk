@@ -33,7 +33,7 @@ const HeroSection = () => {
     <section className="relative py-20 md:py-28 lg:py-36 overflow-hidden min-h-[calc(100vh-48px)]">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/imagen1.png"
+          src="/imagen3.png"
           alt="Food trading background"
           fill
           className="object-cover brightness-[0.6]"

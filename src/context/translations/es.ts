@@ -149,15 +149,21 @@ const es = {
   valueTitle: "Por Qué Elegir TUSK",
   valueSubtitle:
     "Nuestro servicio profesional, eficiente y ágil agrega valor a todas las transacciones comerciales.",
-  qualityAssurance: "Garantía de Calidad",
-  qualityAssuranceText:
-    "Trabajamos con los productores y exportadores más importantes de sus respectivos países, garantizando productos de la más alta calidad.",
-  competitivePricingLong: "Precios Competitivos",
-  competitivePricingText:
-    "Nuestras excelentes relaciones comerciales con los principales proveedores nos permiten ofrecer los precios más competitivos del mercado.",
-  reliableDelivery: "Entrega Confiable",
-  reliableDeliveryText:
-    "Cumplimos con las demandas de nuestros clientes en cuanto a fechas de envío y otros aspectos materiales de la venta.",
+  industryExpertise: "Experiencia en la Industria",
+  industryExpertiseText:
+    "Combinamos un sólido conocimiento del mercado con amplia experiencia en el comercio internacional de productos cárnicos y proteínicos, garantizando operaciones eficientes y bien gestionadas.",
+  trustedNetwork: "Red Global de Confianza",
+  trustedNetworkText:
+    "Trabajamos con una red cuidadosamente seleccionada de productores, procesadores y compradores confiables en todo el mundo. Nuestras relaciones se basan en la confianza, la consistencia y la colaboración a largo plazo.",
+  reliabilityCommitment: "Confiabilidad y Compromiso",
+  reliabilityCommitmentText:
+    "Nuestros socios saben que pueden contar con nosotros. Asumimos plena responsabilidad en cada transacción, manteniendo una comunicación clara y un seguimiento cercano desde el origen hasta el destino.",
+  executionExcellence: "Excelencia en la Ejecución",
+  executionExcellenceText:
+    "En el comercio internacional, los detalles importan. Nos mantenemos activamente involucrados durante todo el proceso para garantizar que las operaciones se ejecuten de manera fluida y eficiente.",
+  partnershipApproach: "Enfoque de Asociación",
+  partnershipApproachText:
+    "Vemos cada transacción como parte de una relación a largo plazo. Nuestro objetivo es crear asociaciones sostenibles que aporten valor y crecimiento a todas las partes involucradas.",
   contactTitle: "Hablemos de Sus Necesidades",
   contactText:
     "Tenemos un interés permanente en desarrollar relaciones comerciales a largo plazo con empresas profesionales y confiables interesadas en productos alimenticios sudamericanos.",

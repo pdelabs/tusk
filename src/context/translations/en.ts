@@ -146,18 +146,24 @@ const en = {
   clientMarkets: "Client Markets",
   clientText: "Our clients are principally based in:",
   andMore: "And many more...",
-  valueTitle: "Why Choose TUSK",
+  valueTitle: "Why Choose Us",
   valueSubtitle:
     "Our professional, efficient, and agile service adds value to all commercial transactions.",
-  qualityAssurance: "Quality Assurance",
-  qualityAssuranceText:
-    "We work with the most important producers and exporters in their respective countries, guaranteeing the highest quality products.",
-  competitivePricingLong: "Competitive Pricing",
-  competitivePricingText:
-    "Our excellent commercial relationships with main suppliers allow us to offer the most competitive prices in the market.",
-  reliableDelivery: "Reliable Delivery",
-  reliableDeliveryText:
-    "We meet the demands of our customers regarding shipment dates and other material issues of the sale.",
+  industryExpertise: "Industry Expertise",
+  industryExpertiseText:
+    "We combine strong market knowledge with extensive experience in international trade of meat and protein products, ensuring efficient and well-managed operations.",
+  trustedNetwork: "Trusted Global Network",
+  trustedNetworkText:
+    "We work with a carefully selected network of reliable producers, processors, and buyers worldwide. Our relationships are built on trust, consistency, and long-term collaboration.",
+  reliabilityCommitment: "Reliability & Commitment",
+  reliabilityCommitmentText:
+    "Our partners know they can rely on us. We take full ownership of every transaction, maintaining clear communication and close follow-up from origin to destination.",
+  executionExcellence: "Execution Excellence",
+  executionExcellenceText:
+    "In international trade, details matter. We stay actively involved throughout the entire process to ensure operations are executed smoothly and efficiently.",
+  partnershipApproach: "Partnership Approach",
+  partnershipApproachText:
+    "We see every transaction as part of a long-term relationship. Our goal is to create sustainable partnerships that bring value and growth to all parties involved.",
   contactTitle: "Let's Discuss Your Needs",
   contactText:
     "We have a permanent interest in developing long-term business relationships with professional and trustworthy companies interested in South American food products.",
