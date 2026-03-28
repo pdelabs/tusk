@@ -11,9 +11,9 @@ const cn = {
   contactUs: "联系我们",
   aboutTitle: "关于TUSK贸易公司",
   aboutText1:
-    "TUSK Trade Company 是一家總部位於烏拉圭的國際貿易公司，專注於高品質的拉丁美洲食品產品。公司成立於 2010 年，我們的團隊在國際食品貿易領域擁有豐富經驗，並與全球多個市場的重要客戶合作。",
+    "TUSK Trade Company 是一家总部位于乌拉圭的国际贸易公司，专注于高品质的拉丁美洲食品产品。公司成立于 2010 年，我们的团队在国际食品贸易领域拥有丰富经验，并与全球多个市场的重要客户合作。",
   aboutText2:
-    "我們相信，成功的商業建立在信任、穩固的合作夥伴關係以及長期合作之上，透過透明且高效的貿易，將可靠的生產商與全球市場連結起來。",
+    "我们相信，成功的商业建立在信任、稳固的合作伙伴关系以及长期合作之上，通过透明且高效的贸易，将可靠的生产商与全球市场连接起来。",
   qualityGuaranteed: "品质保证",
   qualityText: "来自该地区最重要生产商的产品",
   competitivePricing: "价格具有竞争力",
@@ -187,8 +187,8 @@ const cn = {
   rights: "版权所有。",
   unitedStates: "美国",
   europeanUnion: "欧洲联盟",
-  unitedKingdom: "英國",
-  philippines: "Philippines",
+  unitedKingdom: "英国",
+  philippines: "菲律宾",
   multipleProducts: "多种产品",
   formFillRequired: "请填写所有必填字段。",
   formInvalidEmail: "请输入有效的电子邮件地址。",
