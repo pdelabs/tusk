@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "TUSK Trade Company",
   description: "Trade Company",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
