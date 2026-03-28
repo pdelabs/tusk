@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "TUSK Trade Company",
   description: "Trade Company",
   icons: {
-    icon: "/logo.png",
+    icon: "/public/logo.png",
   },
 };
 
