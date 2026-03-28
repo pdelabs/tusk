@@ -193,7 +193,7 @@ const ru = {
   unitedStates: "Соединенные Штаты",
   europeanUnion: "Евросоюз",
   unitedKingdom: "Великобритания",
-  philippines: "Philippines",
+  philippines: "Филиппины",
   multipleProducts: "Несколько продуктов",
   formFillRequired: "Пожалуйста, заполните все обязательные поля.",
   formInvalidEmail: "Пожалуйста, введите корректный адрес электронной почты.",

@@ -6,7 +6,7 @@ import { ProductKey } from "../context/translations/types";
 import { useTranslations } from "../context/translations/TranslationsProvider";
 
 const Products = () => {
-  const { translations: t } = useTranslations();
+  const { translations: t, lang } = useTranslations();
   const products: Array<{
     key: ProductKey;
     imageSrc: string;
@@ -82,7 +82,7 @@ const Products = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
+          {products.filter((p) => !(lang === "ru" && p.key === "lamb")).map((product) => (
             <ProductCard
               key={product.key}
               imageSrc={product.imageSrc}

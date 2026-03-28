@@ -1,13 +1,14 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 import { useTranslations } from "../context/translations/TranslationsProvider";
+
 import { sendEmail } from "./sendEmail";
 import Button from "../components/Button";
 
 type FormStatus = "idle" | "sending" | "success" | "error";
 
 const Contact = () => {
-  const { translations: t } = useTranslations();
+  const { translations: t, lang } = useTranslations();
   const [status, setStatus] = useState<FormStatus>("idle");
   const [formError, setFormError] = useState<string | null>(null);
 
@@ -64,7 +65,7 @@ const Contact = () => {
                   <p>TUSK Trade Company</p>
                   <p>Av. de las Américas 7777</p>
                   <p>Edificio Faros de Carrasco, Of. 102</p>
-                  <p>Montevideo, 11500</p>
+                  <p>15000 Canelones</p>
                   <p>Uruguay</p>
                 </div>
               </div>
@@ -84,7 +85,7 @@ const Contact = () => {
 
           <div className="bg-white text-foreground p-8 rounded-lg shadow-lg">
             <h3 className="text-xl font-bold mb-6">{t.contactFormTitle}</h3>
-            <form className="space-y-4" onSubmit={handleSubmitContact}>
+            <form id="contact-form" className="space-y-4" onSubmit={handleSubmitContact}>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium">
@@ -128,7 +129,7 @@ const Contact = () => {
                 >
                   <option value="">{t.selectProduct}</option>
                   <option value="beef">{t.beef}</option>
-                  <option value="lamb">{t.lamb}</option>
+                  {lang !== "ru" && <option value="lamb">{t.lamb}</option>}
                   <option value="poultry">{t.poultry}</option>
                   <option value="dairy">{t.dairy}</option>
                   <option value="horse">{t.horse}</option>
