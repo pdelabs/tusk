@@ -3,15 +3,6 @@ import { Resend } from "resend";
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-let resend: Resend | null = null;
-
-function getResend(): Resend {
-  if (!resend) {
-    resend = new Resend(process.env.RESEND_API_KEY);
-  }
-  return resend;
-}
-
 export async function POST(request: NextRequest) {
   const { email, name, message } = await request.json();
 
@@ -25,8 +16,8 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Invalid message" }, { status: 400 });
   }
 
-  const resendClient = getResend();
-  const { error } = await resendClient.emails.send({
+  const resend = new Resend(process.env.RESEND_API_KEY);
+  const { error } = await resend.emails.send({
     from: "onboarding@resend.dev",
     to: "contact@tusktrade.com",
     subject: `Message from ${name} (${email})`,
