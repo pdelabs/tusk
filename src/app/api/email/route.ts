@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
 
   const resend = new Resend(process.env.RESEND_API_KEY);
   const { error } = await resend.emails.send({
-    from: "onboarding@resend.dev",
+    from: "contact@tusktrade.com",
     to: "contact@tusktrade.com",
     subject: `Message from ${name} (${email})`,
     text: message,
