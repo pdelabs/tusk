@@ -1,16 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
-import Mail from "nodemailer/lib/mailer";
+import { Resend } from "resend";
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-const transport = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.email,
-    pass: process.env.password,
-  },
-});
 
 export async function POST(request: NextRequest) {
   const { email, name, message } = await request.json();
@@ -25,28 +16,17 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Invalid message" }, { status: 400 });
   }
 
-  const mailOptions: Mail.Options = {
-    from: process.env.email,
-    to: process.env.email,
+  const resend = new Resend(process.env.RESEND_API_KEY);
+  const { error } = await resend.emails.send({
+    from: "contact@tusktrade.com",
+    to: "contact@tusktrade.com",
     subject: `Message from ${name} (${email})`,
     text: message,
-  };
+  });
 
-  const sendMailPromise = () =>
-    new Promise<void>((resolve, reject) => {
-      transport.sendMail(mailOptions, function (err) {
-        if (!err) {
-          resolve();
-        } else {
-          reject(err.message);
-        }
-      });
-    });
-
-  try {
-    await sendMailPromise();
-    return NextResponse.json({ message: "Email sent" });
-  } catch (err) {
-    return NextResponse.json({ error: err }, { status: 500 });
+  if (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
   }
+
+  return NextResponse.json({ message: "Email sent" });
 }
